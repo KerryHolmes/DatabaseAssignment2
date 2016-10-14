@@ -2,7 +2,12 @@ CREATE TABLE movies(
    mid INT IDENTITY(1,1) PRIMARY KEY, 
    title VARCHAR(100) NOT NULL,
    director VARCHAR(100) NOT NULL,
-   release DATETIME NOT NULL,
+   release DATE NOT NULL,
    rating INT NOT NULL,
    UNIQUE(title,director)
 );
+INSERT INTO movies(title,director,release,rating)
+VALUES ('Star Wars','Gorge Lucas', '19970101', 5),
+('Pulp Fiction','Quinton Tarantino', '19940101', 4),
+('2001 A Space Odessy','Stanley Kubric', '19930101', 5),
+('Starship Troopers','Paul Verhoeven', '19971107', 3);
