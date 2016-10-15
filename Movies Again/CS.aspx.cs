@@ -67,7 +67,7 @@ public partial class Movies_Default : System.Web.UI.Page
 
     protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
     {
-        var name = GridView1.Rows[GridView1.EditIndex].Cells[0].Text;
+        //var name = GridView1.Rows[GridView1.EditIndex].Cells[0].Text;
         string connString = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
         SqlConnection conn = new SqlConnection(connString);
         conn.Open();
@@ -76,8 +76,16 @@ public partial class Movies_Default : System.Web.UI.Page
         {
             cmd.Connection = conn;
             cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select * From Movies";
+            SqlDataReader reader = cmd.ExecuteReader();
+            for(int i = 0; i < e.RowIndex+1; ++i)
+            {
+                reader.Read();
+            }
+            var name = reader.GetInt32(0);
+            reader.Close();
             cmd.CommandText = "UPDATE movies SET title=@mov, director=@dir,release=@rel,rating=@rat WHERE mid=@mid;";
-            cmd.Parameters.AddWithValue("@mid", Convert.ToInt32(name));
+            cmd.Parameters.AddWithValue("@mid", name);
             cmd.Parameters.AddWithValue("@mov", e.NewValues["title"]);
             cmd.Parameters.AddWithValue("@dir", e.NewValues["director"]);
             cmd.Parameters.AddWithValue("@rel", e.NewValues["release"]);
