@@ -1,0 +1,33 @@
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\ApplicationInsights.config
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\csc.exe
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\System.Collections.Immutable.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\vbc.exe
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\VBCSCompiler.exe
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\roslyn\VBCSCompiler.exe.config
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Movies Again.dll.config
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Movies Again.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Movies Again.pdb
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.AI.Web.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.AI.WindowsServer.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.ApplicationInsights.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.AI.Web.xml
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.AI.WindowsServer.xml
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.ApplicationInsights.xml
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\obj\Debug\Movies Again.dll
+c:\users\kerry holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\obj\Debug\Movies Again.pdb
+C:\Users\Kerry Holmes\documents\visual studio 2015\Projects\Movies Again\Movies Again\obj\Debug\Movies Again.csprojResolveAssemblyReference.cache
