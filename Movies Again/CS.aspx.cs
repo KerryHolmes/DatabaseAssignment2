@@ -41,12 +41,6 @@ public partial class Movies_Default : System.Web.UI.Page
         }
     }
 
-    protected void OnPageIndexChanging(object sender, GridViewPageEventArgs e)
-    {
-        GridView1.PageIndex = e.NewPageIndex;
-        this.BindGrid();
-    }
-
     protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
     {
         GridView1.EditIndex = e.NewEditIndex;
@@ -55,7 +49,28 @@ public partial class Movies_Default : System.Web.UI.Page
 
     protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
     {
+        string connString = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
+        SqlConnection conn = new SqlConnection(connString);
+        conn.Open();
 
+        using (SqlCommand cmd = new SqlCommand())
+        {
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select * From Movies";
+            SqlDataReader reader = cmd.ExecuteReader();
+            for (int i = 0; i < e.RowIndex + 1; ++i)
+            {
+                reader.Read();
+            }
+            var name = reader.GetInt32(0);
+            reader.Close();
+            cmd.CommandText = "Delete FROM movies WHERE mid=@mid";
+            cmd.Parameters.AddWithValue("@mid", name);
+            cmd.ExecuteNonQuery();
+        }
+        conn.Close();
+        Response.Redirect("Redirect.apsx");
     }
 
     protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
@@ -93,6 +108,6 @@ public partial class Movies_Default : System.Web.UI.Page
             cmd.ExecuteNonQuery();
         }
         conn.Close();
-        Response.Redirect("CS.aspx");
+        this.BindGrid();
     }
 }
